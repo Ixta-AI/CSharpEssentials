@@ -1,0 +1,12 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string fighterName = "Azucina";
+		Console.WriteLine("Hello \nWorld"); //Backslash n (\n) makes the string print the characters after the \n on different lines. 
+		Console.WriteLine("My main will be " +fighterName); //When "+" is used it adds the lines together but dos not input a space in between on its own for the characters before it.
+		Console.WriteLine(fighterName.Length); //C# has tools built in that can be added into lines to do specific functions like what is shown on this line. (it counts the charactor length of fighterName variable. called "Methods"
+	}
+}

@@ -1,0 +1,14 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int num = 11;
+		num++; //++,--,+=,-= all are opporations that Add, Subtract, Add to value, Subtract from Value.
+		Console.WriteLine(num);//When performing math opporations the input values dictate what the output is. So 3/2 would return a value of 1 but 3/2.0 will return a value of 1.5 instead
+		Console.WriteLine( Math.Pow(3,3)); //Math.{insert opporation} as shown in this line performs different math opporations depending on what you use. "," creats a list seperating values
+		/* the tutorial is using Visual Studio add-on that gives a recomendation of different opporations
+		So memorizing the exact syntax is uneccesary. you only need to know what each opporation does like Math.Round rounds the value to the nearest tenth */
+	}
+}

@@ -1,0 +1,26 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string characterName = "Azucina";//This are the containers
+		int timeOfRelease;
+		timeOfRelease = 6;//Normaly only need to creat Variables for things we are refering to multiple times and need to keep track of.
+		
+		Console.WriteLine("Hello World");
+		Console.WriteLine("Tekken 8");
+		Console.WriteLine("Is out today");
+		Console.WriteLine("at "+ timeOfRelease + "pm"); //I can change the time withought having to select one number I can just edit the Value in the "int" Variable.
+		Console.WriteLine("I wont sleep");
+		Console.WriteLine("I want to play");
+		Console.WriteLine("so wo is me I will stay");
+		Console.WriteLine("Jhin");
+		Console.WriteLine("Jhin");
+		Console.WriteLine("Jhin");
+		Console.WriteLine("Jhin");
+		Console.WriteLine("Jhin");
+		Console.WriteLine(characterName); //This makes it so we dont have to search for every line of text that uses a name. We only need to change one Value
+		
+	}
+}

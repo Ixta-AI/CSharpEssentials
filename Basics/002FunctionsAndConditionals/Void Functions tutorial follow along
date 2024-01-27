@@ -1,0 +1,17 @@
+using System; //System is a .NET library Withought it this wont work so its usually always needed. "using" means Using x (System)
+					
+public class Program //class live in System. (the library) and getting rid fo system means there is no library to access.
+{
+	public void Main() //First thing that runs in a program class
+	{
+		Console.WriteLine("TEKKEN"); //console is a class that is part of the system. System > class > Console >...
+		DoMath(12, 8);//This Calls the function "DoMath" which is programed to add two variables and display their sum
+		DoMath(11, 11);//the numbers in the () are values used for this function to run.
+		DoMath(12, 4); //Creating a function lets us reuse it.
+	}
+	//Public= all can access; Void= no return/output; DoMath= this is the label given to this function; ()= indicator of function
+	public void DoMath(int value, int value2) {//Creating a function that does work.
+		var number = value + value2;
+		Console.WriteLine(number);//This will let the call "()", display the function DoMath.
+	}
+}

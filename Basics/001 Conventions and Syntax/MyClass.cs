@@ -7,7 +7,8 @@
 //Add another class with any name, add variables 
 //Using the new keyword create several objects
 //Console writeline the Objects variables
-using System;
+
+/*using System;
 
 public class myClass
 {
@@ -48,5 +49,41 @@ public class characterClass{
     public int health;
     public int maxMana;
     public int summonMaxCount;
+*/
+}using System; //always present it allows for the program to interact with the library.
+					
+public class Program //public is the access modifier (meaning everything can access this and "class" defines a new class or bluprint and Program is the name
+{
+	public myClass Necromancer; //public lets this be interacted with outside its {} block
+ 
 
+    public void Main() //Public= method of access, void= no value returned, Main is the name of the method (main is a defined name i assume in the c# library), (), usualy empty apparently. I dont know why this is needed but it is.
+	{
+		Necromancer = new myClass();
+	
+
+		Necromancer.mana = 50; 
+        Necromancer.health = 2;
+		Necromancer.summonsLevel = 5;
+        Necromancer.defense = 4;
+		
+
+        Console.WriteLine("Class:" + Necromancer.ClassName);
+		Console.WriteLine("Name:" + Necromancer.Name);
+		Console.WriteLine("Health:" + Necromancer.health);
+		Console.WriteLine("Summons Level:" + Necromancer.summonsLevel);
+		Console.WriteLine("Mana:" + Necromancer.mana);
+        Console.WriteLine("Defense:" + Necromancer.defense);
+
+
+	}
+}
+
+public class myClass {
+	public int health;
+	public int summonsLevel;
+    public int defense;
+    public int mana;
+	public string Name = "Azucina";
+	public string ClassName = "Necromancer";
 }

@@ -2,27 +2,27 @@ using System;
 					
 public class Program
 {
-	public Weapon miniGun;
-	public PowerUp weaponPowerUp;
+	public Spell fireBall;
+	public ShardBlessing spellStrength;
 	
 	public void Main()
 	{
-		miniGun = new Weapon();
-		weaponPowerUp = new PowerUp();
+		fireBall = new Spell();
+		spellStrength = new ShardBlessing();
 		
-		miniGun.ammoCount++;
-		miniGun.firePower += weaponPowerUp.powerLevel;
-		Console.WriteLine(miniGun.weaponName + " has an ammo count of " + miniGun.ammoCount + ".");
-		Console.WriteLine("The fire power of is now " + miniGun.firePower + ", it has increased.");
+		fireBall.manaCount += 10;
+		fireBall.firePower += spellStrength.blessingStrength;
+		Console.WriteLine(fireBall.spellName + " has a mana count of " + fireBall.manaCount + ".");
+		Console.WriteLine("Spell increased to " + fireBall.firePower + ", Blessing added.");
 	}
 }
 
-public class Weapon { 
-	public int ammoCount = 10;
-	public string weaponName = "Mini Gun";
-	public float firePower = 11.5f;
+public class Spell {
+	public int manaCount = 50;
+	public string spellName = "Fire ball";
+	public float firePower = 12.5f;
 }
 
-public class PowerUp {
-	public float powerLevel = 2.5f;	
+public class ShardBlessing {
+	public float blessingStrength = 4.5f;
 }

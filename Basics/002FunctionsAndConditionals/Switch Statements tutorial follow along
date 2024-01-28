@@ -1,0 +1,39 @@
+using System; //again this is the library we are using
+					
+public class Program //this is a class containing the first thing that a program runs
+{
+	public GameStates gameStates; //we created a new class/bluprint/block
+	
+	public void Main() //a program runs this first
+	{
+		gameStates = new GameStates();
+		gameStates.currentState = GameStates.States.Playing;
+		gameStates.CheckState();
+	}
+}
+
+public class GameStates 
+{
+	public enum States { //enum's act like continuous variables
+		Starting, //titles used to describe current state
+		Playing,
+		Ending,
+	}//everything in the {} is a part of this one block. "Think of it as a label system... its more than that"
+	
+	public States currentState = States.Starting;
+	
+	public void CheckState(){
+		switch (currentState) {
+			case States.Starting: //case defines a patern "condition" "case is a key word that lets us check something..."
+				Console.WriteLine("Starting");
+				break;
+			case States.Playing: // : colon is used to seperate the case from the code that executes when the case value matches.
+				Console.WriteLine("Playing");
+				break; //"...key word that means stop running the switch"
+			case States.Ending:
+				Console.WriteLine("Ending");
+				break;
+		}
+	
+	}
+}

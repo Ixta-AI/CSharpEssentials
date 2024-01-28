@@ -1,0 +1,38 @@
+using System; //System is a .NET library Withought it this wont work so its usually always needed. "using" means Using x (System)
+					
+public class Program //class live in System. (the library) and getting rid fo system means there is no library to access.
+{
+	public void Main() //First thing that runs in a program class
+	{
+		Console.WriteLine("TEKKEN"); //console is a class that is part of the system. System > class > Console >...
+		DoMath(12, 8);//This Calls the function "DoMath" which is programed to add two variables and display their sum
+		DoMath(11, 11);//the numbers in the () are values used for this function to run.
+		DoMath(12, 4); //Creating a function lets us reuse it.
+		Compare(4,3);
+		Compare(3,4);
+		checkPassword("I lost");
+		checkPassword("Tekken 8");
+	}
+	//Public= all can access; Void= no return/output; DoMath= this is the label given to this function; ()= indicator of function
+	public void DoMath(int value, int value2) {//Creating a function that does work.
+		var number = value + value2;
+		Console.WriteLine(number);//This will let the call "()", display the function DoMath.
+	}
+	
+	public void Compare (int value, int value2) //Compare function created in this block
+	{
+		if(value > value2) {
+			Console.WriteLine("True");//"Nested" WriteLine call underneath this opporation
+		} else {//Else statement for if first statement is false
+			Console.WriteLine("False");
+		}
+	}
+	public void checkPassword (string passward) 
+	{
+		if (passward == "Tekken 8"){ //== means equals != means not equal.
+			Console.WriteLine("GoodGame");
+	  } else { //Attempting to keep code in a block under if for easeir time reading the code.
+			Console.WriteLine("GG");
+		}
+	}
+}

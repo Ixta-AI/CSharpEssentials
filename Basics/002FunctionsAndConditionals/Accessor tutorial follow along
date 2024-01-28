@@ -1,0 +1,46 @@
+using System; //System is a .NET library Withought it this wont work so its usually always needed. "using" means Using x (System)
+					
+public class Program //class live in System. (the library) and getting rid fo system means there is no library to access.
+{
+	public Operations myOperator;//This is accessing our Operations class and we name it myOperator.
+	
+	public void Main() //First thing that runs in a program class
+	{
+		myOperator = new Operations();
+		
+		Console.WriteLine("TEKKEN"); //console is a class that is part of the system. System > class > Console >...
+		myOperator.DoMath(12, 8);//This Calls the function "DoMath" which is programed to add two variables and display their sum
+		myOperator.DoMath(11, 11);//the numbers in the () are values used for this function to run.
+		myOperator.DoMath(12, 4); //Creating a function lets us reuse it.
+		myOperator.Compare(4,3);
+		myOperator.Compare(3,4);
+		myOperator.checkPassword("I lost");
+		myOperator.checkPassword("Tekken 8"); //the dot (.) acts as an addendum.
+	}
+	
+}
+//Doing it like this seems to make the code much easier to read.
+public class Operations //new class created moved all operatiors into it.
+{
+	public void DoMath(int value, int value2) {
+		var number = value + value2;
+		Console.WriteLine(number);
+	}
+	
+	public void Compare (int value, int value2) 
+	{
+		if(value > value2) {
+			Console.WriteLine("True");
+		} else {
+			Console.WriteLine("False");
+		}
+	}
+	public void checkPassword (string passward) 
+	{
+		if (passward == "Tekken 8"){
+			Console.WriteLine("GoodGame");
+	  } else {
+			Console.WriteLine("GG");
+		}
+	}
+}

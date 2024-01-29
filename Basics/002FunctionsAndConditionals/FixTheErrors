@@ -1,17 +1,29 @@
-using System
+using System;//missing the end line/ statement
 					
 public class Program
 {
-	public void Main(
-	{
-		Console.WriteLine"Welcome);
-		DoMath(10, 4);
-		DoMath(20, 7)
-		DoMath(30, 15);
+	public Operations myOpp;//missing the body call for the operations class
 	
+	public void Main()//missing the ) end  
+	{
+		myOpp = new Operations();//refered to at bottom because I don't know how to explain this to well
+		
+		Console.WriteLine("Welcome");//missing the call start ( and " at the end of Welcome
+		myOpp.DoMath(10, 4);//missing the "addendum".DoMath it should be myOpp
+		myOpp.DoMath(20, 7);//missing the end line ;
+		myOpp.DoMath(30, 15);
+	}//Missing the End } for this block
+	
+public class Operations{ //missing class to perform the work in
 	
 	public void DoMath (int value, int value2) {
-		var number = value + valu;
-		Console.WriteLine(number)
+		var number = value + value2;//missing the e2 from value2
+		Console.WriteLine(number);//missign the end line ;
+		}
 	}
 }
+/*Missing a decleration of a new object here we are refering to Operations
+which we gave a value of myOpp. using .myOpp tells the code to use the public class Operations
+Public Operations "goes to class" myOpp"what we refer to this whole block as now".
+Then we creat the new object of myOpp = "new" Operations. Basicly we created a bluprint that is being
+pulled up from so that we can apply it here in this block.*/

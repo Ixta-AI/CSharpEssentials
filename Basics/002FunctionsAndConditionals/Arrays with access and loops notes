@@ -1,0 +1,32 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//array has [] this one is named equipedGear
+        equiped[] equipedGear = {new equiped(), new equiped(), new equiped()};//thes are new objects being created the peranthases means "we are constructing" so  object arg. 
+        //if we wanted to name the other items something different before writing in Helm all we need do is access them and giving them a different value "name"
+        //*equipedGear[index of 2] dot accessor is equal to "Gloves";* this will name the Third item in our list as Gloves and the rest will be writen as Helm...
+        //...we basicaly changed the equipment name for the third item to Gloves instead of Helm. 
+        
+        for(var i=0; i<equipedGear.Length; i++){ //if item one on list is less then the last item on list move select up one
+            equipedGear[i].durability = 0; //from the first item onwards write 0
+            
+
+        }
+        
+        
+        //Console.WriteLine(equipedGear[0].equipment);//we tell the code to write out our "Array first item [access or dot] equipment "Helm" we asked it through code to write Helm
+        foreach(var item in equipedGear){ //"for each variable "item" in equipedGear write "item". accessor
+            Console.WriteLine(item.equipment);// string will be written out three times
+			Console.WriteLine(item.durability); //write the durability "5" changed to 0 in the line above
+//this has to be declared down here because the "var item" only exsists after it is writen. if I refer to it before the code cant see it.
+        }  //parenth is argument and curly is the body
+	}
+}
+public class equiped {
+    public string equipment = "Helm";
+    public int durability = 5;
+
+}

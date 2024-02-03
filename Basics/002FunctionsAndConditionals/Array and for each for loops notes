@@ -1,0 +1,29 @@
+using System;
+					
+public class Program
+{
+	public void Main()
+	{	//Array "string[]" allows for more then one element(s) like in string
+		/*string[] VideoGame = {"Tekken", "Tekken 2", "Tekken 3", "Tekken 4", "Tekken 5", "Tekken 6", "Tekken 7", "Tekken 8"};//this is an Array
+		//Console.WriteLine(VideoGame[2]);//This Will write out a specific item in the list
+		//Item locations start at [0].
+
+		Console.WriteLine(VideoGame.Length);//Lengthi in this will give me the # of elements in this Array
+		foreach(var Video_Game in VideoGame){//This is saying for each Item in VideoGame...
+			Console.WriteLine("I love "+ Video_Game + ".");}//...write Item name (Item was named "Video_Game")*/
+		//=============================================================================================================
+		string[] PT = {"in figther", "out fighter", "Boxer"};
+		PT[1] = "Judo"; //This overwrote out fighter to Judo, it was assigned a new value
+	
+		//we can write in for loops
+		for(var i = 0; i <PT.Length; i++){ //i is short for indexer it starts at 0 here for the first item in our array
+			PT[i] = "one for all"; //the code above makes i move up by one and i as our variable here...
+			//... will take one of our items and rename it to "one for all" then move up one and repeat until it is nolonger greater than the array list
+		
+		}
+		
+		foreach(var item in PT) {//for each is read only so we canot write
+			Console.WriteLine(item);
+		}
+	}
+}
